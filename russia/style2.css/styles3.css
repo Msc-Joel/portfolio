@@ -1,0 +1,237 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:400,300,400italic,700|Open+Sans:300);
+@@ -43,4 +43,81 
+
+@@ a:hover {
+}
+a.no-underline {
+    text-decoration: none;
+} 
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, Helvetica, sans-serif ; */
+    /* "font-family: Courier ; */
+}
+
+.container {
+    position: relative;
+  }
+
+
+#vis {
+    width: 90%;
+    height: 600px;
+    margin: 5em auto;
+}
+#g-aiImg> {
+    width: 90%;
+    height: 600px;
+    margin: 5em auto;
+}
+
+.methodology {
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 12px;
+    max-width: 50rem;
+    margin: 2rem auto; vertical margin and horizontal margin
+    text-align: center ;
+    border-top: solid 0px;
+    border-color: hsl(0, 0%, 50%);
+} 
+    
+.header {
+    max-width: 50rem;
+    font-family: monospace ;
+    /* border-top: solid 1px; */
+}
+h1 {
+    text-align: center;
+    font-family: 'Montserrat' ;
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Montserrat' Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+h4 {
+
+    font: 12px Arial, Helvetica, sans-serif;
+    
+    margin-bottom: 0px;
+    
+    }
+
+    p {
+        font-family: 'Merriweather';
+        line-height: 1.75em;
+        margin: 0;
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+.section {
+    max-width: 50rem;
+    margin: auto;
+    background-color: white;
+  color: black;
+  border: 2px 
+  margin: 20px;
+  padding: 8px;
+}
+
+.footer {
+    max-width: 50rem;
+    margin: 2rem auto; vertical margin and horizontal margin
+    text-align:;
+    border-top: solid 1px;
+    border-color: hsl(0, 0%, 50%);
+}
+img {
+    max-width: 50rem;
+}
+
+.figcaption {
+  font-size: small;
+  font-family: Times, serif ;
+  margin: auto; vertical margin and horizontal margin
+  text-align: ;
+  font-size: 12pt;
+}
+
+
+.footer p {
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+a, a:visited {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: black;
+}
+a:hover {
+    color: hsla(0, 0%, 0%, 0.5);
+}
+a.no-underline {
+    text-decoration: none;
+}
+
+em {
+    margin-left: auto;
+    margin-top: 2px;
+    padding-left: 5px;
+    padding-right: 20px;
+    font-family: Arial, Helvetica, sans-serif ;
+    text-align: justify;
+    font-size: 10pt;
+}
+
+     
+#hr {
+    height: 1px;
+    background-color: gray;
+    border: none;
+}
+
+hr {
+    height: 10px;
+    background: lightgrey;
+    border: none;
+}
+    
+
+q {
+    quotes: "“" "”";
+    font-size: 2rem;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  border: 5px solid #0000;
+}
+
+#scrolly {
+    position: relative;
+    padding: 1rem;
+  }
+
+  .scrolly-overlay {
+    position: relative;
+    padding: 0;
+    max-width: 35rem;
+    margin: 0 auto;
+  }
+
+  .sticky-thing {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 0;
+    top: 0;
+    height: 100vh;
+    /* Center everything inside */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .step {
+    margin: 0 auto 2rem auto;
+    margin-bottom: 25rem;
+    background-color: #fff;
+    background-color: #fff;
+    color: black;
+  }
+
+  .step p {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .hidden { visibility: hidden; }
+
+  .altairChart {
+    width: 80%;
+    height:auto;
+  }
+
+  /* When it's less than 700 pixels wide, do normal scrollytelling */
+  @media only screen and (min-width: 700px) {
+    #scrolly.side-by-side {
+      display: flex;
+    }
+
+    #scrolly.side-by-side > div {
+      flex-basis: 0;
+      flex-grow: 1;
+      flex-shrink: 1;
+      padding: 0.75em;
+    }
+
+    #scrolly.side-by-side .scrolly-overlay {
+      margin-top: 70vh;
+      order: 0;
+      /* Change these to adjust sizing options */
+      min-width: 15rem;
+      max-width: 20rem;
+    }
+
+    #scrolly.side-by-side .sticky-thing {
+      order: 1;
+      flex-grow: 2;
+    }
+  }
+ 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citibike New York</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<img src="citibike.jpg" width="100%">
+<div class="head-container">
+    <h1>Mapping Citi Bike rides in 09/2020 and 09/2021</h1>
+</div>
+<br>
+
+<p>Citi Bike is the nation's largest bike sharing system, with 25,000 bikes and 
+    over 1,500 stations across Manhattan, Brooklyn, Queens, the Bronx, Jersey City 
+    and Hoboken.
+    I visualized data for September 2020 and September 2021 in which i selected bikers 
+        start and stops across New York City.
+        The locations of these stations, provided in the data, were converted into GEOJSON 
+    using geopandas library in python.
+        </p>
+
+
+    <div class="columns">
+        <div class="column is-half-desktop is-full-mobile is-full-tablet">
+            <div id='map'>
+                <div id='legend-title' class="legend-title">
+                    <div class="legend">
+                        <p>2020 trips start</p>
+                        <div><span style="background-color: #C4D6B0" class="text-span"></span>0-3,499</div>
+                        <div><span style="background-color: #FCDE9C" class="text-span"></span>3,500-6,999</div>
+                        <div><span style="background-color: #BA5624" class="text-span"></span>7,000-10,499</div>
+                        <div><span style="background-color:#845A6D" class="text-span"></span>10,500-13,999</div>
+                        <div><span style="background-color: #381D2A" class="text-span"></span>14,000^</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column is-half-desktop is-full-mobile is-full-tablet">
+            <div id='map2'>
+                <div id='legend-title' class="legend-title">
+                    <div class="legend">
+                        <p>2020 trips stop</p>
+                        <div><span style="background-color: #B0DAF1" class="text-span"></span>0-3,499</div>
+                        <div><span style="background-color: #8D91C7" class="text-span"></span>3,500-6,999</div>
+                        <div><span style="background-color: #6E75A8" class="text-span"></span>7,000-10,499</div>
+                        <div><span style="background-color: #845A6D" class="text-span"></span>10,500-13,999</div>
+                        <div><span style="background-color: #3E1929" class="text-span"></span>14,000^</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column is-half-desktop is-full-mobile is-full-tablet">
+            <div id='map3'>
+                <div id='legend-title' class="legend-title">
+                    <div class="legend">
+                        <p>2020 trips start</p>
+                        <div><span style="background-color: #C4D6B0" class="text-span"></span>0-3,499</div>
+                        <div><span style="background-color: #FCDE9C" class="text-span"></span>3,500-6,999</div>
+                        <div><span style="background-color: #BA5624" class="text-span"></span>7,000-10,499</div>
+                        <div><span style="background-color:#845A6D" class="text-span"></span>10,500-13,999</div>
+                        <div><span style="background-color: #381D2A" class="text-span"></span>14,000^</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column is-half-desktop is-full-mobile is-full-tablet">
+            <div id='map4'>
+                <div id='legend-title' class="legend-title">
+                    <div class="legend">
+                        <p>2020 trips stop</p>
+                        <div><span style="background-color: #B0DAF1" class="text-span"></span>0-3,499</div>
+                        <div><span style="background-color: #8D91C7" class="text-span"></span>3,500-6,999</div>
+                        <div><span style="background-color: #6E75A8" class="text-span"></span>7,000-10,499</div>
+                        <div><span style="background-color: #845A6D" class="text-span"></span>10,500-13,999</div>
+                        <div><span style="background-color: #3E1929" class="text-span"></span>14,000^</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type='text/javascript' src="map.js"></script>
+<!-- <div class="container column is-full-desktop is-full-mobile is-full-tablet"> -->
+</div>
+</div>
+</div>
+
+</body>
+</html> 
